@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #334155 70%, #475569 100%);
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #334155 70%, #475569 100%);
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Enhanced card styling */
+.workout-card {
+  background: linear-gradient(135deg, #F5F5DC 0%, #F0E68C 100%) !important;
+  border: 1px solid rgba(218, 165, 32, 0.3) !important;
+  border-radius: 16px !important;
+  backdrop-filter: blur(10px) !important;
+  transition: all 0.3s ease-in-out !important;
+  color: #2c3e50 !important;
+}
+
+.workout-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 40px rgba(255, 107, 53, 0.3) !important;
+  background: linear-gradient(135deg, #F0E68C 0%, #DDD3A0 100%) !important;
+  border-color: rgba(255, 107, 53, 0.5) !important;
+}
+
+/* Ensure all text in workout cards is visible */
+.workout-card * {
+  color: #2c3e50 !important;
+}
+
+.workout-card h1,
+.workout-card h2,
+.workout-card h3,
+.workout-card h4,
+.workout-card h5,
+.workout-card h6 {
+  color: #1a1a1a !important;
+}
+
+.workout-card p,
+.workout-card span,
+.workout-card .MuiTypography-body1,
+.workout-card .MuiTypography-body2 {
+  color: #555 !important;
+}
+
+/* Activity items styling */
+.activity-item {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 100%) !important;
+  border: 1px solid rgba(218, 165, 32, 0.3) !important;
+  border-radius: 12px !important;
+  backdrop-filter: blur(5px) !important;
+  transition: all 0.2s ease !important;
+}
+
+.activity-item:hover {
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.15) 0%, rgba(79, 195, 247, 0.1) 100%) !important;
+  border-color: rgba(255, 107, 53, 0.4) !important;
+  transform: translateX(4px) !important;
+}
+
+/* Ensure all text in activity items is visible */
+.activity-item * {
+  color: #2c3e50 !important;
+}
+
+.activity-item h1,
+.activity-item h2,
+.activity-item h3,
+.activity-item h4,
+.activity-item h5,
+.activity-item h6 {
+  color: #1a1a1a !important;
+}
+
+.activity-item p,
+.activity-item span,
+.activity-item .MuiTypography-body1,
+.activity-item .MuiTypography-body2 {
+  color: #555 !important;
+}
+
+/* Progress bar styling */
+.MuiLinearProgress-root {
+  border-radius: 8px !important;
+  height: 8px !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.MuiLinearProgress-bar {
+  border-radius: 8px !important;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 10px;
+  }
+}
