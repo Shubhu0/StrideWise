@@ -91,6 +91,8 @@ stridewise/
 
 ## License
 
-MIT LicenseSTRAVA_CLIENT_ID=your_actual_client_id_from_strava
+MIT License
+
+STRAVA_CLIENT_ID=your_actual_client_id_from_strava
 STRAVA_CLIENT_SECRET=your_actual_client_secret_from_stravaSTRAVA_CLIENT_ID=your_actual_client_id_from_strava
 STRAVA_CLIENT_SECRET=your_actual_client_secret_from_strava
